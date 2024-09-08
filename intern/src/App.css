@@ -10,7 +10,8 @@ body {
 }
 
 .form-container {
-  background-color: #e2d8d8;
+  background-color: #08221c;
+  color: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(11, 10, 10);
@@ -20,6 +21,12 @@ body {
   font-size: 17px;
   font-family: 'Times New Roman', Times, serif;
 
+}
+.form-container:hover{
+  background-color: #0a0a0a;
+}
+.form-container input:hover{
+  background-color: #0a0a0a;
 }
 
 .form-group {
@@ -43,7 +50,8 @@ body {
   border-left: none;
   border-right: none;
   outline: none;
-  background-color:#e2d8d8 ;
+  background-color: #08221c;
+  color: white;
 }
 
 
@@ -430,9 +438,9 @@ h1{
 @media (max-width: 768px) {
   .form-container {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 50%;
     margin-top: 50px;
-    font-size: 14px;
+    font-size: 30px;
   }
 
   .text-input {
@@ -465,9 +473,24 @@ h1{
     font-size: 14px;
   }
 
-  .edit, .delete {
+  .edit {
     width: 35px;
     height: 30px;
+  }
+  .delete {
+    width: 39px;
+    height: 35px;
+  }
+  .Footer{
+    font-size: 20px;
+    width:530px;
+    border-radius: 10px;
+  }
+  h1{
+    font-size: 20px;
+    width:530px;
+    border-radius: 10px;
+
   }
 }
 
@@ -475,10 +498,13 @@ h1{
 @media (max-width: 480px) {
   .form-container {
     width: 90%;
-    margin-left: 5%;
-    font-size: 12px;
+    margin-left: 2%;
+    font-size: 20px;
   }
 
+.Login-input{
+  width: 80vw;
+}
   .text-input, .create-task {
     width: 80vw;
   }
@@ -506,9 +532,24 @@ h1{
     font-size: 12px;
   }
 
-  .edit, .delete {
+  .edit{
     width: 30px;
     height: 25px;
+  }
+  .delete {
+    width: 38px;
+    height: 35px;
+  }
+  .Footer{
+    font-size: 20px;
+    width:430px;
+    border-radius: 10px;
+  }
+  h1{
+    font-size: 20px;
+    width:430px;
+    border-radius: 10px;
+
   }
 }
 

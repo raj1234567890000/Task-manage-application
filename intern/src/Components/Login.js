@@ -76,28 +76,31 @@ function Login({ switchView }) {
          onChange={(e) => setSecretKey(e.target.value)}
          required
             placeholder='Secret_key'
+            className='Login-input'
        />
      </div>
    ):null}
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label>Email:</label>
-          <input
+          <input  className='Login-input'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
              placeholder='Email'
+               
           />
         </div>
         <div className="form-group">
           <label>Password:</label>
-          <input
+          <input  className='Login-input'
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
             placeholder='Password'
+            
           />
         </div>
         <button type="submit">Login</button>

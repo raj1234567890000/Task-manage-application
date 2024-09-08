@@ -68,11 +68,12 @@ function Register({ switchView }) {
    {UserType === "Admin"?(
        <div className="form-group">
        <label>Secret_key:</label>
-       <input
+       <input  className='Login-input'
          type="password"
          onChange={(e) => setSecretKey(e.target.value)}
          required
          placeholder='Secret_key'
+           
        />
      </div>
    ):null}
@@ -80,32 +81,35 @@ function Register({ switchView }) {
       <div className="form-group">
             <label>UserName:</label>
     
-          <input
+          <input  className='Login-input'
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
            placeholder='UserName'
+            
           />
         </div>
         <div className="form-group">
           <label>Email:</label>
-          <input
+          <input  className='Login-input'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
               placeholder='Email'
+               
           />
         </div>
         <div className="form-group">
           <label>Password:</label>
-          <input
+          <input  className='Login-input'
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-              placeholder='Password'
+            
+               
           />
         </div>
         <button type="submit">Register</button>

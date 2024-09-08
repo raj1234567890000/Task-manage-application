@@ -86,6 +86,7 @@ Logout
           placeholder="Task Name"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          required
         /><br/>
         <input  className='text-input'
           type="text"

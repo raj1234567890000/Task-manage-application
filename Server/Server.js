@@ -129,7 +129,7 @@ res.status(200).send({
 // Create a new task
 app.post('/create', async (req, res) => {
     try {
-      const { title, description,assignedTo,status,createdAt,userId} = req.body;
+      const { title, description,assignedTo,status,createdAt,userId} = req.body;         
       const newTask = new Task({ title, description,assignedTo,status,createdAt,userId});
       await newTask.save();
       res.status(201).json(newTask)
