@@ -3,6 +3,7 @@ import axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
 import EditIcon from '@mui/icons-material/Edit';
 import toast from 'react-hot-toast';
+import Footer from './Footer';
 
 
 const User = () => {
@@ -50,12 +51,13 @@ getTask();
 
  
   return (
+    <>
     <div>
            <button className='logout-btn' onClick={handleLogout}>
 Logout
      </button>
      
-      <h1 style={{textAlign:"center"}}>All Tasks</h1>
+      <h1 style={{textAlign:"center"}}>All Tasks List</h1>
       <div className='search'>
      
       <input type='text' placeholder='search Task' className='searchinput'
@@ -101,6 +103,8 @@ Logout
       </div>
     </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

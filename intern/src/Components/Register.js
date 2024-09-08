@@ -57,6 +57,7 @@ function Register({ switchView }) {
   };
 
   return (
+    <div className='register'>
     <div className="form-container">
       <h2>Register</h2>
       <div style={{marginBottom:"20px"}}>
@@ -71,17 +72,20 @@ function Register({ switchView }) {
          type="password"
          onChange={(e) => setSecretKey(e.target.value)}
          required
+         placeholder='Secret_key'
        />
      </div>
    ):null}
       <form onSubmit={handleRegister}>
       <div className="form-group">
-          <label>UserName:</label>
+            <label>UserName:</label>
+    
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+           placeholder='UserName'
           />
         </div>
         <div className="form-group">
@@ -91,6 +95,7 @@ function Register({ switchView }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+              placeholder='Email'
           />
         </div>
         <div className="form-group">
@@ -100,6 +105,7 @@ function Register({ switchView }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+              placeholder='Password'
           />
         </div>
         <button type="submit">Register</button>
@@ -110,6 +116,7 @@ function Register({ switchView }) {
           Login here
         </span>
       </p>
+    </div>
     </div>
   );
 }

@@ -75,6 +75,7 @@ function Login({ switchView }) {
          type="password"
          onChange={(e) => setSecretKey(e.target.value)}
          required
+            placeholder='Secret_key'
        />
      </div>
    ):null}
@@ -86,6 +87,7 @@ function Login({ switchView }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+             placeholder='Email'
           />
         </div>
         <div className="form-group">
@@ -95,6 +97,7 @@ function Login({ switchView }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            placeholder='Password'
           />
         </div>
         <button type="submit">Login</button>

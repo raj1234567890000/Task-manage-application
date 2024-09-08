@@ -4,6 +4,8 @@ import DeleteForeverRoundedIcon from '@mui/icons-material/DeleteForeverRounded';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import Footer from './Footer';
+
 
 
 const AllTask = () => {
@@ -49,8 +51,9 @@ const AllTask = () => {
   }
  
   return (
+    <>
     <div>
-      <h1 style={{textAlign:"center"}}>All Tasks</h1>
+      <h1 style={{textAlign:"center"}}>All Tasks Here</h1>
       <div className='search'>
     
       <input type='text' placeholder='search Task ' className='searchinput'
@@ -98,7 +101,10 @@ const AllTask = () => {
       </div>
     </div>
     </div>
-   
+  
+ <Footer/>
+  
+    </>
   )
 }
 

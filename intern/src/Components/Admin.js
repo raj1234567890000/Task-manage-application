@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import Footer from './Footer';
 
 
 
@@ -70,12 +71,16 @@ if(res){
 
 
   return (
-    <div className='task-manage'>
-         <button className='logout-btn' onClick={handleLogout}>
+    <>
+
+    <button className='logout-btn' onClick={handleLogout}>
 Logout
      </button>
+     <h1 style={{textAlign:"center"}}>Create Tasks </h1>
+    <div className='task-manage'>
+
       <div div className='task'>
-       
+     
         <input className='text-input'
           type="text"
           placeholder="Task Name"
@@ -113,11 +118,11 @@ Logout
       </div><br/>
       <button onClick={handleCreateTask} className='create-task'>Create Task</button>
   
-     
+   
  
     </div>
- 
-  
+    <Footer/>
+    </>
     
   );
 }

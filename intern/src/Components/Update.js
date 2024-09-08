@@ -3,10 +3,7 @@ import React, { useEffect, useState } from 'react';
 import '../App.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
-
-
-
-
+import Footer from './Footer';
 
 
 function Update() {
@@ -69,6 +66,8 @@ const handleUpdate = async () => {
 
 
   return (
+    <>
+     <h1 style={{textAlign:"center"}}>Upadte Your Tasks</h1>
     <div className='task-manage'>
     
       <div div className='task'>
@@ -110,10 +109,10 @@ const handleUpdate = async () => {
       
       </div><br/>
       <button onClick={handleUpdate} className='create-task'>Update Task</button>
-  
+   
     </div>
- 
-  
+    <Footer/>
+    </>
     
   );
 }

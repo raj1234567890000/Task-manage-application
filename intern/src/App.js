@@ -8,6 +8,8 @@ import Update from './Components/Update';
 import AllTask from './Components/AllTask';
 import Updateuser from './Components/Updateuser';
 import Nav from './Components/Nav';
+import Error from './Components/Error';
+
 
 
 
@@ -33,6 +35,8 @@ function App() {
  <Route path='/update/:id' element={<Update/>}></Route>
  <Route path='/alltask' element={<AllTask/>}></Route>
 <Route path='/user/:id' element={<Updateuser/>}></Route>
+<Route path='/*' element={<Error/>}></Route>
+
 
  </Routes>
   </BrowserRouter>
